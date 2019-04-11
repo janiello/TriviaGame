@@ -1,6 +1,17 @@
+body {
+    background-image: url(../images/bg-image.jpeg);
+    margin: 0px;
+}
+
 #main-content {
     text-align: center;
-    background-image: url(../images/bg-image.jpeg);
+    background: skyblue;
+    width: 840px;
+    margin: 0 auto;
+}
+
+#header {
+    padding-top: 10px;
 }
 
 #first-question {
