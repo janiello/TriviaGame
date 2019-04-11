@@ -4,7 +4,7 @@ var intervalId;
 document.getElementById("time-remaining").innerText = time;
 
 // Create a function for the start button that hides the "start-screen" element...
-document.getElementById("Start").onclick(start());
+document.getElementById("Start").onclick = start;
 
 // Brings up the trivia questions...
 
@@ -13,13 +13,13 @@ function start() {
     // This clears my original "time" variable...
     clearInterval(intervalId);
     // ...And redefines it every second by calling another function (countdown).
-    intervalId = setInterval(countdown(), 1000);
+    intervalId = setInterval(countdown, 1000);
 }
 
 // This function actually changes the time variable.
 function countdown() {
     time--;
-    document.getElementById("time-remaining").innerText(time);
+    document.getElementById("time-remaining").innerText = time;
 }
 
 // If timer hits 0...
