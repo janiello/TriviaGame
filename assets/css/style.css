@@ -14,6 +14,15 @@ body {
     padding-top: 10px;
 }
 
+#start-screen {
+    display: block;
+    padding-bottom: 20px;
+}
+
+#questions {
+    display: none;
+}
+
 #first-question {
     padding: 10px;
 }

@@ -3,25 +3,29 @@ var time = 60;
 var intervalId;
 document.getElementById("time-remaining").innerText = time;
 
-// Create a function for the start button that hides the "start-screen" element...
+// Create a function for the start button that starts the timer...
 document.getElementById("Start").onclick = start;
 
-// Brings up the trivia questions...
-
-// ...And starts the timer.
 function start() {
     // This clears my original "time" variable...
     clearInterval(intervalId);
     // ...And redefines it every second by calling another function (countdown).
     intervalId = setInterval(countdown, 1000);
+    
+    // This function actually changes the time variable in the "time-remaining" div.
+    function countdown() {
+        time--;
+        document.getElementById("time-remaining").innerText = time;
+    }
+    // ...Hides the "start-screen" element...
+    var hideStart = document.getElementById("start-screen");
+    hideStart.style.display = "none";
+    
+    // ...And brings up the trivia questions.
+    var showQuestions = document.getElementById("questions");
+    showQuestions.style.display = "block";
+    
 }
-
-// This function actually changes the time variable.
-function countdown() {
-    time--;
-    document.getElementById("time-remaining").innerText = time;
-}
-
 // If timer hits 0...
 
     // Calculate questions answered...
