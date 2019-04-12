@@ -17,7 +17,7 @@
                 <button id="Start">Start</button>
             </div>
             <div id="questions">
-                <div id="first-question">
+                <div class="question" id="first-question">
                     <h4>Who won the last Triple Crown in 2018?</h4>
                     <form>
                         <input type="radio" name="question-one" value="American Pharaoh">American Pharaoh
@@ -26,7 +26,7 @@
                         <input type="radio" name="question-one" value="Affirmed">Affirmed
                     </form>
                 </div>
-                <div id="second-question">
+                <div class="question" id="second-question">
                     <h4>Which of these NFL teams has never won a Super Bowl?</h4>
                     <form>
                         <input type="radio" name="question-two" value="Chiefs">Chiefs
@@ -35,7 +35,7 @@
                         <input type="radio" name="question-two" value="Eagles">Eagles
                     </form>
                 </div>
-                <div id="third-question">
+                <div class="question" id="third-question">
                     <h4>How many teams are selected for the Division I NCAA Men's Basketball Tournament?</h4>
                     <form>
                         <input type="radio" name="question-three" value="68">68
@@ -44,7 +44,7 @@
                         <input type="radio" name="question-three" value="32">32
                     </form>
                 </div>
-                <div id="fourth-question">
+                <div class="question" id="fourth-question">
                     <h4>What is the only sport in which the defense possesses the ball?</h4>
                     <form>
                         <input type="radio" name="question-four" value="Football">Football
@@ -53,7 +53,7 @@
                         <input type="radio" name="question-four" value="Baseball">Baseball
                     </form>
                 </div>
-                <div id="fifth-question">
+                <div class="question" id="fifth-question">
                     <h4>Where will the 2022 Winter Olympics be held?</h4>
                     <form>
                         <input type="radio" name="question-five" value="Tokyo">Tokyo, Japan
@@ -62,7 +62,7 @@
                         <input type="radio" name="question-five" value="Beijing">Beijing, China
                     </form>
                 </div>
-                <div id="sixth-question">
+                <div class="question" id="sixth-question">
                     <h4>Who did Happy Gilmore out putt to win the gold jacket in the Tour Championship?</h4>
                     <form>
                         <input type="radio" name="question-six" value="Tiger">Tiger Woods
@@ -71,7 +71,7 @@
                         <input type="radio" name="question-six" value="Bryson">Bryson DeChambeau
                     </form>
                 </div>
-                <div id="seventh-question">
+                <div class="question" id="seventh-question">
                     <h4>How often are the Olympic Games held?</h4>
                     <form>
                         <input type="radio" name="question-seven" value="Quadrennially">Quadrennially
@@ -80,7 +80,7 @@
                         <input type="radio" name="question-seven" value="Biennially">Biennially
                     </form>
                 </div>
-                <div id="eighth-question">
+                <div class="question" id="eighth-question">
                     <h4>How many players are on the pitch during a soccer match?</h4>
                     <form>
                         <input type="radio" name="question-eight" value="8">8
@@ -89,7 +89,7 @@
                         <input type="radio" name="question-eight" value="11">11
                     </form>
                 </div>
-                <div id="ninth-question">
+                <div class="question" id="ninth-question">
                     <h4>What event is held at Augusta National?</h4>
                     <form>
                         <input type="radio" name="question-nine" value="Masters">The Masters
@@ -98,7 +98,7 @@
                         <input type="radio" name="question-nine" value="Players">The Players
                     </form>
                 </div>
-                <div id="tenth-question">
+                <div class ="question" id="tenth-question">
                     <h4>Which star athlete led the SCLSU Mud Dogs to a Bourbon Bowl victory over the University of Louisiana Cougars?</h4>
                     <form>
                         <input type="radio" name="question-ten" value="Marino">Dan Marino
@@ -107,6 +107,12 @@
                         <input type="radio" name="question-ten" value="Hingle">Hingle McCringleberry
                     </form>
                 </div>
+            </div>
+            <div id="score">
+                Questions Answered: <span id="answered"></span><br><br>
+                Questions Unanswered: <span id="unanswered"></span><br><br>
+                Correct Answers: <span id="correct"></span><br><br>
+                <button id="new-game">Start Again</button>
             </div>
         </div>
         <div id="stats"></div>

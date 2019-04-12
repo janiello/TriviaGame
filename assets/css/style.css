@@ -23,42 +23,11 @@ body {
     display: none;
 }
 
-#first-question {
+.question {
     padding: 10px;
 }
 
-#second-question {
-    padding: 10px;
-}
-
-#third-question {
-    padding: 10px;
-}
-
-#fourth-question {
-    padding: 10px;
-}
-
-#fifth-question {
-    padding: 10px;
-}
-
-#sixth-question {
-    padding: 10px;
-}
-
-#seventh-question {
-    padding: 10px;
-}
-
-#eighth-question {
-    padding: 10px;
-}
-
-#ninth-question {
-    padding: 10px;
-}
-
-#tenth-question {
-    padding: 10px;
+#score {
+    display: none;
+    padding-bottom: 20px;
 }
