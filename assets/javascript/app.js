@@ -42,6 +42,7 @@ function start() {
         
         // Calculate questions answered...
         
+        
         // Questions unanswered...
         
         // And correct answers.
@@ -50,9 +51,10 @@ function start() {
     }
 }
 
-// Stop function to reset the timer...
+// Stop function to stop the timer...
 function stop() {
     clearInterval(intervalId);
 }
+
 // If all questions are answered, calculate correct answers.
 
