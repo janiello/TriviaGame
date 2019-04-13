@@ -42,11 +42,15 @@ function start() {
         
         // Calculate questions answered...
         
-        
         // Questions unanswered...
         
         // And correct answers.
-        
+        var correct = 0;
+        document.getElementById("correct").innerText = correct;
+        } else if (document.getElementById("submit").onclick) {
+            stop();
+            showQuestions.style.display = "none";
+            showScore.style.display = "block";
         }
     }
 }
@@ -58,3 +62,5 @@ function stop() {
 
 // If all questions are answered, calculate correct answers.
 
+// "Start Again" button hides the score page, brings up the questions again, and restarts the timer for a new round.
+document.getElementById("new-game").onclick = start;
